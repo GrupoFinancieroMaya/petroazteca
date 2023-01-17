@@ -98,11 +98,11 @@
 
 							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li class=""><a href="#">Inicio</a></li>
-									<li class=""><a href="#">Nosotros</a></li>
-									<li class=""><a href="#">Servicios</a></li>
-									<li class=""><a href="#">Ventajas</a></li>
-									<li class=""><a href="#">Desventajas</a></li>
+									<li class=""><a class="inicio" href="javascript:void(0);">Inicio</a></li>
+									<li><a class="ancla" data-ancla="nosotros" href="javascript:void(0);">Nosotros</a></li>
+									<li><a class="ancla" data-ancla="servicios" href="javascript:void(0);">Servicios</a></li>
+									<li><a class="ancla" data-ancla="apollo" href="javascript:void(0);">Apollo</a></li>
+									<li><a class="ancla" data-ancla="preguntas" href="javascript:void(0);">Preguntas</a></li>
 									<!--<li class=""><a href="#">Portfolio</a></li>
 									<li class=""><a href="#">Blog</a></li>
 									<li><a href="contact.html">Contact us</a></li>-->
@@ -177,11 +177,11 @@
                         
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                             <ul class="navigation clearfix">
-                                <li class=""><a href="#">Inicio</a></li>
-								<li class=""><a href="#">Nosotros</a></li>
-								<li class=""><a href="#">Servicios</a></li>
-								<li class=""><a href="#">Ventajas</a></li>
-								<li class=""><a href="#">Desventajas</a></li>
+                                <li class=""><a class="inicio" href="javascript:void(0);">Inicio</a></li>
+								<li><a class="ancla" data-ancla="nosotros" href="javascript:void(0);">Nosotros</a></li>
+								<li><a class="ancla" data-ancla="servicios" href="javascript:void(0);">Servicios</a></li>
+								<li><a class="ancla" data-ancla="apollo" href="javascript:void(0);">Apollo</a></li>
+									<li><a class="ancla" data-ancla="preguntas" href="javascript:void(0);">Preguntas</a></li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
@@ -268,7 +268,7 @@
 	</section>
 	
 	<!-- About Section Two -->
-	<section class="about-section-two">
+	<section class="about-section-two" id="nosotros">
 		<div class="auto-container">
 			<div class="row clearfix">
 				
@@ -286,7 +286,7 @@
 				</div>
 				
 				<!-- Content Column -->
-				<div class="content-column col-lg-7 col-md-12 col-sm-12">
+				<div class="content-column col-lg-7 col-md-12 col-sm-12" >
 					<div class="inner-column">
 						<h3>Nosotros manejamos tus finanzas <br> en el sector de <span>hidrocarburos</span></h3>
 						<div class="text">
@@ -302,7 +302,7 @@
 	</section>
 	
 	<!-- Services Section Four-->
-	<section class="services-section-four">
+	<section class="services-section-four" id="servicios">
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title">
@@ -421,7 +421,7 @@
 	<!-- End Services Section Four-->
 	
 	<!-- Business Section -->
-	<section class="business-section">
+	<section class="business-section" id="apollo">
 		<div class="outer-container">
 			<div class="clearfix sticky-container">
 				
@@ -565,7 +565,7 @@
 	<!-- End Business Section -->
 	
 	<!-- Faq Section -->
-	<section class="faq-section">
+	<section class="faq-section" id="preguntas">
 		<div class="auto-container">
 			<div class="row clearfix">
 				
@@ -834,11 +834,11 @@
                                 <div class="footer-widget links-widget">
 									<h4>Links</h4>
 									<ul class="list-link">
-										<li><a href="">Iniio</a></li>
-										<li><a href="">Nosotros</a></li>
-										<li><a href="">Servicios</a></li>
-										<li><a href="">Ventajas</a></li>
-										<li><a href="">Desventajas</a></li>
+										<li><a class="inicio" href="javascript:void(0);">Inicio</a></li>
+										<li><a class="ancla" data-ancla="nosotros" href="javascript:void(0);">Nosotros</a></li>
+										<li><a class="ancla" data-ancla="servicios" href="javascript:void(0);">Servicios</a></li>
+										<li><a class="ancla" data-ancla="apollo" href="javascript:void(0);">Apollo</a></li>
+										<li><a class="ancla" data-ancla="preguntas" href="javascript:void(0);">Preguntas</a></li>
 									</ul>
 								</div>
 							</div>
@@ -855,7 +855,7 @@
                                 <div class="footer-widget links-widget">
 									<h4>Soporte</h4>
 									<ul class="list-link">
-										<li><a href="">Contactanos</a></li>
+										<li><a class="inicio" href="javascript:void(0);">Contactanos</a></li>
 									</ul>
 								</div>
 							</div>
@@ -930,6 +930,24 @@
 <script src="js/wow.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/main.js"></script>
-
+<script>
+	//Cuando cargue la página completamente
+	$(document).ready(function(){
+    //Creamos un evento click para el enlace
+    $(".ancla").click(function(evento){
+      //Anulamos la funcionalidad por defecto del evento
+      evento.preventDefault();
+      //Creamos el string del enlace ancla
+      var codigo = "#" + $(this).data("ancla");
+      //Funcionalidad de scroll lento para el enlace ancla en 3 segundos
+      $("html,body").animate({scrollTop: $(codigo).offset().top}, 3000);
+    });
+	//Creamos un evento click para el botón
+    $(".inicio").click(function(evento){
+      //Funcionalidad para que vaya arriba lentamente
+      $("html,body").animate({scrollTop:0}, "slow");
+    });
+  });
+</script>
 </body>
 </html>
