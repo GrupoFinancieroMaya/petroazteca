@@ -2420,7 +2420,7 @@ img{
 	height:492px;
 	z-index:1;
 	display:inline-block;
-	background:url(../images/main-slider/2.png) no-repeat;
+	/*background:url(../images/main-slider/2.png) no-repeat;*/
 }
 
 .main-slider .auto-container{
