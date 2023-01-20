@@ -121,6 +121,7 @@
     		animateIn: 'fadeIn',
 			loop:true,
 			margin:0,
+			nav:true,
 			autoHeight: true,
 			autoplayHoverPause: true,
 			smartSpeed: 500,
