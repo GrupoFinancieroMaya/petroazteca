@@ -121,11 +121,10 @@
     		animateIn: 'fadeIn',
 			loop:true,
 			margin:0,
-			nav:true,
 			autoHeight: true,
 			autoplayHoverPause: true,
 			smartSpeed: 500,
-			autoplay: 6000,
+			autoplay: 600,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{
@@ -184,7 +183,7 @@
 			margin:0,
 			nav:true,
 			smartSpeed: 500,
-			autoplay: 6000,
+			autoplay: 600,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{
@@ -267,7 +266,7 @@
 			margin:35,
 			nav:true,
 			smartSpeed: 500,
-			autoplay: 5000,
+			autoplay: 500,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{items:1},
@@ -322,7 +321,7 @@
 			nav:true,
 			autoHeight: true,
 			smartSpeed: 500,
-			autoplay: 5000,
+			autoplay: 500,
 			navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-next-1"></span>' ],
 			responsive:{
 				0:{items:1},
@@ -344,7 +343,7 @@
 			margin:0,
 			nav:true,
 			smartSpeed: 500,
-			autoplay: 5000,
+			autoplay: 500,
 			navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-next-1"></span>' ],
 			responsive:{
 				0:{items:1},
@@ -368,7 +367,7 @@
 			margin:0,
 			nav:true,
 			smartSpeed: 500,
-			autoplay: 5000,
+			autoplay: 500,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{items:1},
@@ -392,7 +391,7 @@
 			margin:30,
 			nav:true,
 			smartSpeed: 500,
-			autoplay: 4000,
+			autoplay: 400,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{items:1},
@@ -414,7 +413,7 @@
 			margin:30,
 			nav:true,
 			smartSpeed: 500,
-			autoplay: 4000,
+			autoplay: 400,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{items:1},
